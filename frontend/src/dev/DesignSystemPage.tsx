@@ -10,10 +10,10 @@ import {
   Search,
   Sun,
   Users,
-  WandSparkles,
 } from 'lucide-react'
 import { Avatar } from '../components/ui/avatar'
 import { Badge } from '../components/ui/badge'
+import { BrandMark } from '../components/ui/brand-mark'
 import { Button } from '../components/ui/button'
 import { Card } from '../components/ui/card'
 import { Input } from '../components/ui/input'
@@ -28,9 +28,9 @@ export function DesignSystemPage() {
   return (
     <main className="design-page">
       <header className="design-header">
-        <a aria-label="Threadline design system" className="brand" href="/dev/design">
-          <span className="brand__mark"><WandSparkles size={17} /></span>
-          <span>threadline<span className="brand__period">.</span></span>
+        <a aria-label="gRPCTalk design system" className="brand" href="/dev/design">
+          <BrandMark />
+          <span>gRPCTalk<span className="brand__period">.</span></span>
           <Badge tone="accent">DESIGN SYSTEM</Badge>
         </a>
         <div className="header-actions">
@@ -59,9 +59,9 @@ export function DesignSystemPage() {
           </div>
           <div className="hero__social">
             <div className="avatar-stack">
-              <Avatar name="Aisha Khan" size="sm" presence="online" />
-              <Avatar name="Theo Martin" size="sm" presence="online" />
-              <Avatar name="Rin Park" size="sm" presence="away" />
+              <Avatar name="Aniket Vishwakarma" size="sm" presence="online" />
+              <Avatar name="Kaif Shaikh" size="sm" presence="online" />
+              <Avatar name="Kartikey Singh" size="sm" presence="away" />
               <span className="avatar-stack__more">+8</span>
             </div>
             <span><strong>12 people</strong> making things happen</span>
@@ -74,7 +74,7 @@ export function DesignSystemPage() {
             className="floating-note floating-note--back"
             transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
           >
-            <div className="note-author"><Avatar name="Rin Park" size="sm" /><div><strong>Rin Park</strong><span>in product-design</span></div></div>
+            <div className="note-author"><Avatar name="Kartikey Singh" size="sm" /><div><strong>Kartikey Singh</strong><span>in product-design</span></div></div>
             <p>That little detail makes the whole flow feel more human ✨</p>
             <div className="note-reaction">💜 <span>4</span></div>
           </motion.div>
@@ -83,7 +83,7 @@ export function DesignSystemPage() {
             className="floating-note floating-note--front"
             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
           >
-            <div className="note-author"><Avatar name="Aisha Khan" size="sm" presence="online" /><div><strong>Aisha Khan</strong><span>just now · in launch-room</span></div><span className="note-more">···</span></div>
+            <div className="note-author"><Avatar name="Aniket Vishwakarma" size="sm" presence="online" /><div><strong>Aniket Vishwakarma</strong><span>just now · in launch-room</span></div><span className="note-more">···</span></div>
             <p>Good morning, everyone! The launch checklist is looking <em>really</em> good. We’re so close 🚀</p>
             <div className="note-footer"><span>♡ 3</span><span>↩ Reply</span><span>···</span></div>
           </motion.div>
@@ -119,9 +119,9 @@ export function DesignSystemPage() {
               <Button aria-label="Search" size="icon" variant="secondary"><Search size={16} /></Button>
             </div>
             <div className="component-row component-row--avatars">
-              <Avatar name="Aisha Khan" presence="online" />
-              <Avatar name="Theo Martin" presence="away" />
-              <Avatar name="Rin Park" presence="offline" />
+              <Avatar name="Aniket Vishwakarma" presence="online" />
+              <Avatar name="Kaif Shaikh" presence="away" />
+              <Avatar name="Kartikey Singh" presence="offline" />
               <span className="component-note">Human, at a glance.</span>
             </div>
             <div className="skeleton-row">
@@ -185,12 +185,12 @@ export function DesignSystemPage() {
       </section>
 
       <footer className="design-footer">
-        <a className="brand brand--small" href="/dev/design"><span className="brand__mark"><WandSparkles size={14} /></span><span>threadline<span className="brand__period">.</span></span></a>
+        <a className="brand brand--small" href="/dev/design"><BrandMark size={23} /><span>gRPCTalk<span className="brand__period">.</span></span></a>
         <span>Made for the moments in between.</span>
         <div className="footer-actions">
           <Button onClick={() => notify.info('You’re all caught up', { description: 'There’s nothing new right now.', id: 'design-demo' })} size="sm" variant="ghost">Try a toast</Button>
           <Button onClick={() => notify.info('You’re all caught up', { description: 'There’s nothing new right now.', id: 'design-demo' })} size="sm" variant="ghost">Show toast again</Button>
-          <span>© 2026 Threadline</span>
+          <span>© 2026 gRPCTalk</span>
         </div>
       </footer>
     </main>

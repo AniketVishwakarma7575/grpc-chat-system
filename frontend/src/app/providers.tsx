@@ -48,7 +48,11 @@ export function AppProviders({ children }: { children: ReactNode }) {
       <GooeyToaster
         position={isMobile ? 'top-center' : 'top-right'}
         theme={theme}
-        preset="subtle"
+        preset="smooth"
+        bounce={0.12}
+        duration={4800}
+        gap={10}
+        offset={isMobile ? 12 : 18}
         maxQueue={4}
         queueOverflow="drop-oldest"
         spring={!reducedMotion}

@@ -1,7 +1,7 @@
 export type ThemePreference = 'system' | 'light' | 'dark'
 export type ResolvedTheme = Exclude<ThemePreference, 'system'>
 
-const THEME_KEY = 'threadline-theme'
+const THEME_KEY = 'gRPCTalk-theme'
 
 export function getPreferredTheme(): ThemePreference {
   const savedTheme = window.localStorage.getItem(THEME_KEY)
