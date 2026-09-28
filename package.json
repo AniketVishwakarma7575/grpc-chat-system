@@ -1,4 +1,13 @@
 {
+  "name": "grpc-chat-system",
+  "private": true,
+  "scripts": {
+    "build": "npm install --prefix frontend && npm --prefix frontend run build",
+    "dev": "npm --prefix frontend run dev",
+    "lint": "npm --prefix frontend run lint",
+    "test": "npm --prefix frontend run test",
+    "typecheck": "npm --prefix frontend run typecheck"
+  },
   "dependencies": {
     "framer-motion": "^13.4.4",
     "goey-toast": "^0.5.0",
