@@ -1,6 +1,6 @@
-# Threadline — gRPC Chat System
+# gRPCTalk — gRPC Chat System
 
-Threadline is a modern team chat application built around a gRPC/Connect backend and a React frontend. It is designed for rooms, direct messages, presence, typing indicators, notifications, search, and real-time collaboration.
+gRPCTalk is a modern team chat application built around a gRPC/Connect backend and a React frontend. It is designed for rooms, direct messages, presence, typing indicators, notifications, search, and real-time collaboration.
 
 > **Current status:** The repository currently contains the frontend demo application with local dummy data. The backend endpoint inventory below is the planned contract for the production implementation; it is documentation, not a claim that every RPC already exists.
 
